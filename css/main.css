@@ -1,0 +1,111 @@
+@import "tailwindcss";
+@config "../tailwind.config.js";
+
+/** Theme **/
+@theme {
+    /* Screens */
+    --breakpoint-sm: 30rem;
+    /*480px*/
+
+    --breakpoint-md: 48rem;
+    /*768px*/
+
+    --breakpoint-lg: 80rem;
+    /*1280px*/
+
+    --breakpoint-xl: 87.5rem;
+    /*1400px*/
+
+    --breakpoint-2xl: 96rem;
+    /*1536px*/
+
+    /* font */
+    --font-lobster: "Lobster", serif;
+    --font-inter: "Inter", sans-serif;
+}
+
+@utility container {
+    margin-inline: auto;
+    padding-inline: 1rem;
+    padding-block: 2rem;
+    width: 100%;
+    overflow-x: clip;
+    max-width: 1536px;
+
+    @media (min-width: theme('screens.md')) {
+        padding-inline: 4.5rem;
+        padding-block: 3rem;
+    }
+}
+
+@layer base {
+    body {
+        @apply text-base overflow-x-clip font-inter;
+    }
+
+    p {
+        @apply text-sm leading-7 font-inter;
+    }
+
+    button {
+        @apply px-1 py-1 border cursor-pointer;
+    }
+
+    li {
+        @apply text-xs font-inter lg:text-base text-n-500;
+    }
+}
+
+@layer components {
+    .btn {
+        @apply flex items-center justify-center gap-2 px-4 py-2 text-sm tracking-wider text-white transition-colors duration-500 bg-p-900 hover:bg-p-700 border-p-900 font-inter lg:py-3 lg:px-9;
+    }
+
+    .text-gradient {
+        background: linear-gradient(to right, theme('colors.p.600'), theme('colors.p.900'));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .sub-heading {
+        @apply text-xs font-medium uppercase font-inter text-p-900;
+    }
+
+    .main-heading {
+        @apply mt-2 text-2xl tracking-wide capitalize lg:text-3xl font-lobster;
+    }
+}
+
+@layer utilities {
+    .logo-ticket-image {
+        @apply w-auto h-6 lg:h-9;
+    }
+
+    .tabContainer {
+        @apply flex flex-col w-full gap-8 md:flex-row md:gap-16;
+    }
+
+    .tabContainer>div {
+        @apply w-full my-auto;
+    }
+
+    .tabContainer h3 {
+        @apply text-3xl font-bold capitalize md:text-4xl;
+    }
+
+    .tabContainer h4 {
+        @apply mt-4 text-xl font-semibold text-p-900 md:mt-8;
+    }
+
+    .tabContainer p {
+        @apply max-w-xl mt-2;
+    }
+
+    .tabContainer button {
+        @apply flex-none mt-4 md:mt-8;
+    }
+
+    .productImg {
+        @apply w-full md:w-1/2 h-[250px] md:h-[700px] md:rounded-tr-[80px] md:rounded-br-[80px] object-cover;
+    }
+}
