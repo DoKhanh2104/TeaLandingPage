@@ -1,7 +1,7 @@
-.r-tabs .r-tabs-nav {
+/* .r-tabs .r-tabs-nav {
     margin: 0;
     padding: 0;
-}
+} */
 
 .r-tabs .r-tabs-tab {
     display: inline-block;
@@ -10,7 +10,7 @@
 }
 
 .r-tabs .r-tabs-panel {
-    padding: 15px;
+    /* padding: 15px; */
     display: none;
 }
 
@@ -25,10 +25,12 @@
 /* Accordion responsive breakpoint */
 @media only screen and (max-width: 768px) {
     .r-tabs .r-tabs-nav {
-        display: none;
+        /* display: none; */
+        display: flex;
     }
 
     .r-tabs .r-tabs-accordion-title {
-        display: block;
+        /* display: block; */
+        display: none;
     }
 }

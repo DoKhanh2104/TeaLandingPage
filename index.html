@@ -9,7 +9,7 @@
 
     <!-- CSS -->
     <link href="./dist/output.css" rel="stylesheet">
-    <link type="text/css" rel="stylesheet" href="css/style.css" />
+    <link type="text/css" rel="stylesheet" href="css/responsive-tabs.css" />
 
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -27,6 +27,27 @@
 </head>
 
 <body>
+
+    <!-- NAVIGATION -->
+    <header class="relative z-50">
+        <div class="flex justify-center item navbar">
+            <div class="max-w-[1536px] w-full px-4 py-4 md:py-10 md:px-[72px] flex items-center justify-between">
+                <!-- Logo -->
+                <a class="flex items-center justify-center flex-none" href="./">
+                    <img src="./assets/logo.png" alt="logo" class="w-16 h-16">
+                    <p class="text-lg capitalize font-lobster text-p-900">Tea Station</p>
+                </a>
+
+                <!-- Nav Link -->
+                <nav class="items-center justify-end hidden w-full gap-4 lg:flex lg:gap-8">
+                    <a href="/products" class="navLink">Sản Phẩm</a>
+                    <a href="./#story" class="navLink">Giới Thiệu</a>
+                    <a href="./#contact" class="navLink">Liên Hệ</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
     <!-- HERO -->
     <section id="hero" class="h-screen max-h-[1100px] bg-gradient-to-t from-p-100 to-white overflow-y-clip">
         <div class="container relative flex items-center justify-center w-full h-full xl:justify-start">
@@ -92,13 +113,13 @@
                 <div id="products-tabs">
                     <ul
                         class="flex bg-p-50 px-4 md:px-10 xl:px-[200px] py-4 md:py-6 gap-4 md:gap-8 justify-center mb-9 text-center">
-                        <li><a class="tab-link" href="#matcha">Trà Matcha</a></li>
+                        <li><a class="tab-link" href="#matcha"><span>Trà</span> Matcha</a></li>
                         <li>|</li>
-                        <li><a class="tab-link" href="#whiteTea">Trà Trắng</a></li>
+                        <li><a class="tab-link" href="#whiteTea"><span>Trà</span> Trắng</a></li>
                         <li>|</li>
-                        <li><a class="tab-link" href="#oolongTea">Trà Ô long</a></li>
+                        <li><a class="tab-link" href="#oolongTea"><span>Trà</span> Ô long</a></li>
                         <li>|</li>
-                        <li><a class="tab-link" href="#blackTea">Trà Đen</a></li>
+                        <li><a class="tab-link" href="#blackTea"><span>Trà</span> Đen</a></li>
                     </ul>
 
                     <!-- Matcha Product -->
@@ -193,6 +214,7 @@
 
                         </div>
                     </div>
+
                 </div>
             </div>
         </div>
