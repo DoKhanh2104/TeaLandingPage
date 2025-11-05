@@ -58,6 +58,7 @@
     li {
         @apply text-xs font-inter lg:text-base text-n-500;
     }
+
 }
 
 @layer components {
@@ -140,5 +141,23 @@
 
     .activeTab {
         @apply text-p-900;
+    }
+
+    /* Feature */
+    .feature-card {
+        @apply h-[400px] w-[368px] flex flex-col justify-center items-center p-[36px] gap-[36px] transition-all duration-500 bg-center bg-no-repeat bg-cover;
+        clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    }
+
+    #features h3 {
+        @apply relative z-0 text-xl font-semibold tracking-widest text-white uppercase transition-all duration-500 translate-y-16 group-hover:translate-y-4;
+    }
+
+    #features p {
+        @apply relative z-0 text-center text-white transition-all duration-500 translate-y-full opacity-0 group-hover:-translate-y-0 group-hover:opacity-100;
+    }
+
+    .feature-filter {
+        @apply absolute inset-0 transition-all duration-500 opacity-50 bg-p-700 group-hover:opacity-75 group-hover:bg-p-900 -z-10;
     }
 }

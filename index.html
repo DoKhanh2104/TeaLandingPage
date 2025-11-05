@@ -67,7 +67,7 @@
     <section id="hero" class="h-screen max-h-[1100px] bg-gradient-to-t from-p-100 to-white overflow-y-clip">
         <div class="container relative flex items-center justify-center w-full h-full xl:justify-start">
             <!-- Picture -->
-            <div class="absolute bottom-0 right-0 z-0 overflow-hidden md:-bottom-40 xl:top-1/2 xl:-translate-y-0.5">
+            <div class="absolute bottom-0 right-0 z-0 overflow-hidden md:-bottom-40 xl:top-1/2 xl:-translate-y-1/2">
                 <img src="./assets/hero_img.png" alt="hero_img" class="h-full">
             </div>
 
@@ -235,10 +235,93 @@
         </div>
     </section>
 
+    <!-- SLOGAN -->
+    <section id="slogan" class="mt-20 overflow-clip">
+        <div class="relative min-w-full h-[30vh] max-h-[276px] overflow-hidden flex items-center justify-center">
+            <video autoplay loop muted
+                class="absolute inset-0 min-w-full min-h-full -z-10 md:top-[-20%] md:left-[-50%] md:translate-x-1/2">
+                <source src="./assets/video.mp4" type="video/mp4" />
+            </video>
 
+            <p
+                class="px-4 text-base tracking-wide text-center text-white md:text-2xl text-shadow-[2px_2px_8px_#000000]">
+                Chỉ những lá trà ngon nhất mới
+                được đưa vào sản phẩm của chúng tôi,<br class="hidden lg:block"> đảm bảo mỗi ngụm trà đều mang hương vị
+                tinh khiết và tuyệt hảo.</p>
+        </div>
+    </section>
 
+    <!-- Features -->
+    <section id="features">
+        <div class="container relative m-20 text-center">
+            <!-- First -->
+            <div class="flex flex-col items-center justify-center w-full gap-0 lg:gap-10 lg:flex-row">
+                <!-- Card -->
+                <div class="feature-card group bg-[url(/assets/benefit_1.jpg)]">
+                    <div class="feature-filter">
 
-    <div class="h-screen"></div>
+                    </div>
+                    <h3>Nguồn cung cao cấp</h3>
+                    <p>
+                        Chúng tôi tự hào sản xuất trà ngay tại Hoa Kỳ, sử dụng nguyên liệu chất
+                        lượng cao từ các trang trại địa phương.
+                    </p>
+                </div>
+
+                <!-- Card -->
+                <div class="order-first bg-p-50 feature-card lg:order-none lg:bg-transparent">
+                    <div>
+                        <h2 class="sub-heading">Why Us?</h2>
+                        <h1 class="leading-loose text-center main-heading">Sự <span class="text-gradient">độc đáo</span>
+                            từ
+                            <br>Tea Station
+                        </h1>
+                    </div>
+                </div>
+
+                <!-- Card -->
+                <div class="feature-card group bg-[url(/assets/pic1.jpg)]">
+                    <div class="feature-filter">
+
+                    </div>
+                    <h3>Hương vị và pha chế
+                        độc đáo</h3>
+                    <p>
+                        Sản phẩm độc quyền của chúng tôi gồm các loại trà được với hương vị độc đáo, được chế tác để
+                        làm hài lòng mọi khẩu vị.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Second -->
+            <div class="flex flex-col items-center justify-center w-full lg:flex-row lg:gap-10 lg:-mt-20">
+                <div class="feature-card group bg-[url(/assets/benefit_3.jpg)]">
+                    <div class="feature-filter">
+
+                    </div>
+                    <h3>Tập trung vào sức khỏe</h3>
+                    <p>
+                        Hãy thưởng thức các loại trà tốt cho sức khỏe của chúng tôi, được pha chế cẩn thận để hỗ trợ trí
+                        óc, cơ thể và tâm hồn của bạn.
+                    </p>
+                </div>
+
+                <div class="feature-card group bg-[url(/assets/benefit_4.jpg)]">
+                    <div class="feature-filter">
+
+                    </div>
+                    <h3>Trải Nghiệm Cá Nhân Hoá</h3>
+                    <p>
+                        Trải nghiệm dịch vụ được cá nhân hóa với mọi đơn hàng, phù hợp với sở thích và nhu cầu trà riêng
+                        của bạn.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="h-screen">
+    </div>
 </body>
 
 </html>
