@@ -10,6 +10,7 @@
     <!-- CSS -->
     <link href="./dist/output.css" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="css/responsive-tabs.css" />
+    <link type="text/css" rel="stylesheet" href="css/show-hide-nav.css">
 
     <!-- FONT -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -23,6 +24,7 @@
 
     <!-- Script -->
     <script defer src="js/jquery.responsiveTabs.js"></script>
+    <script defer src="js/jquery.hidescroll.js"></script>
     <script defer type="module" src="/js/main.js"></script>
 </head>
 
@@ -30,7 +32,7 @@
 
     <!-- NAVIGATION -->
     <header class="relative z-50">
-        <div class="flex justify-center item navbar">
+        <div class="flex items-center justify-center navbar">
             <div class="max-w-[1536px] w-full px-4 py-4 md:py-10 md:px-[72px] flex items-center justify-between">
                 <!-- Logo -->
                 <a class="flex items-center justify-center flex-none" href="./">
@@ -44,6 +46,19 @@
                     <a href="./#story" class="navLink">Giới Thiệu</a>
                     <a href="./#contact" class="navLink">Liên Hệ</a>
                 </nav>
+
+                <!-- Hamburger Icon -->
+                <div id="toggle_btn" class="block cursor-pointer lg:hidden">
+                    <img class="text-p-950 size-5" src="./assets/Menu Icon.svg" alt="menu">
+                </div>
+
+                <!-- Mobile Hamburger -->
+                <div class="dropdown-menu lg:hidden">
+                    <a href="./products.html" class="navLink mobileNavLink">Sản Phẩm</a>
+                    <a href="./story.html" class="navLink mobileNavLink">Giới Thiệu</a>
+                    <a href="./contact.html" class="navLink mobileNavLink">Liên Hệ</a>
+                </div>
+
             </div>
         </div>
     </header>

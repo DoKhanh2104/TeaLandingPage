@@ -1,4 +1,19 @@
 import { productList, partnerLogoBasePath, partnerLogos } from "./data.js"
+
+//Navbar
+$(function () {
+    // scroll
+    $(".navbar").hidescroll();
+
+    // mobile dropdown
+    const toggle = $("#toggle_btn");
+    const dropdown = $(".dropdown-menu")
+
+    toggle.click(() => {
+        dropdown.toggleClass("open")
+    })
+});
+
 // Partner logo
 $(function () {
     const container = document.getElementById('partner-logo-list');
