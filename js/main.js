@@ -44,3 +44,11 @@ $(function () {
     });
 }
 );
+
+//Carousel Best Seller
+$(function () {
+    $(".slider").slick({
+        autoplay: true,
+        dots: true,
+    });
+});

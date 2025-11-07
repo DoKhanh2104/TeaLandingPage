@@ -160,4 +160,30 @@
     .feature-filter {
         @apply absolute inset-0 transition-all duration-500 opacity-50 bg-p-700 group-hover:opacity-75 group-hover:bg-p-900 -z-10;
     }
+
+    /* Best seller */
+    .best-product-info {
+        @apply mt-4 md:mt-9;
+
+        h3 {
+            @apply text-lg font-semibold text-p-900 md:text-2xl;
+        }
+
+        p {
+            @apply max-w-lg
+        }
+
+        .best-product--left {
+            @apply p-4 lg:pl-0 lg:pr-8;
+        }
+
+    }
+
+    #best-seller img {
+        @apply max-w-[600px] h-[250px] md:h-[70vh] max-h-[700px] md:rounded-tl-[80px] md:rounded-bl-[80px] object-cover
+    }
+
+    .slick-dots {
+        bottom: -4rem !important;
+    }
 }
