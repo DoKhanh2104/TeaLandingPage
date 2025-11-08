@@ -39,6 +39,15 @@
 }
 
 @layer base {
+
+    :root {
+        --progress-number-bg: theme("colors.n.100");
+        --progress-number-color: theme("colors.n.500");
+        --progressbar-fill: linear-gradient(to right,
+                theme("colors.p.500"),
+                theme("colors.p.900"))
+    }
+
     html {
         @apply scroll-smooth
     }
@@ -173,10 +182,12 @@
             @apply max-w-lg
         }
 
-        .best-product--left {
-            @apply p-4 lg:pl-0 lg:pr-8;
-        }
 
+
+    }
+
+    .best-product--left {
+        @apply p-4 lg:pl-0 lg:pr-8;
     }
 
     #best-seller img {
@@ -185,5 +196,41 @@
 
     .slick-dots {
         bottom: -4rem !important;
+    }
+
+    .benefit-bars {
+        @apply mt-8;
+    }
+
+    .benefit-bars>div {
+        @apply flex flex-col gap-8 mb-8 lg:flex-row
+    }
+
+    /* Stats item */
+    .stats-item {
+        h1 {
+            @apply text-6xl font-bold leading-none tracking-wider text-center text-transparent lg:text-8xl font-lobster bg-clip-text;
+            background-image: linear-gradient(24deg, rgba(255, 255, 255, 1) 40%, rgba(121, 220, 180, 1) 100%);
+        }
+
+        h2 {
+            @apply mt-2 text-xs text-center lg:text-base text-white/50
+        }
+    }
+
+    .contact-info {
+        @apply w-full;
+
+        >div {
+            @apply flex items-center gap-2 px-2 py-2 bg-p-600;
+        }
+
+        h1 {
+            @apply text-white capitalize;
+        }
+
+        p {
+            @apply mt-2 text-base
+        }
     }
 }
